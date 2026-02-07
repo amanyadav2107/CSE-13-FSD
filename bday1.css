@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ffeaa7, #fab1a0, #fd79a8, #ffeaa7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #e84393;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.doll {
+    font-size: 4em;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.cake {
+    font-size: 4em;
+    opacity: 0;
+    transition: all 1s;
+    position: relative;
+}
+
+.cake.cut {
+    animation: cutCake 2s ease-in-out;
+}
+
+.from {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #666;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.start-btn {
+    background: #e84393;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.start-btn:hover {
+    background: #d63031;
+}
+
+@keyframes cutCake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}

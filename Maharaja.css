@@ -1,0 +1,10 @@
+/* simple reset*/
+*{box-sizing: border-box;margin:0;padding:0 ; font-family: Arial, Helvetica, sans-serif;}
+
+/*layout */
+body{background: #f7f8fb; color: #111; padding: 20px;}
+
+/*header(block element)*/
+.site-header{
+    display: block;    /*
+}
